@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background: #03001C;
+}
+
+.circle {
+    position: absolute;
+    width: 248.06px;
+    height: 248.06px;
+    left: 1437.04px;
+    top: 217.55px;
+    background: radial-gradient(51.02% 51.02% at 27.19% 28.07%, #C3B3F3 0%, #A394D2 23.96%, #5A4696 64.06%, #211449 100%);
+    transform: rotate(106.5deg);
+}

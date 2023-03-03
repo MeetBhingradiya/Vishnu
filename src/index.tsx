@@ -1,19 +1,34 @@
-import React from 'react';
+import { StrictMode, createContext , useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const Context = createContext({});
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+interface Settings_Type {
+    Api: string,
+    ActiveComponent: 0 | 1 | 2 | 3 | 4 | 5,
+}
+
+
+function AppCovers() {
+    const [ Settings, SetSettings ] = useState<Settings_Type>({
+        Api:"http://localhost:2002",
+        ActiveComponent: 0
+    })
+
+    return (
+        <StrictMode>
+            <Context.Provider value={{Settings, SetSettings}}>
+                <Router>
+                    <App />
+                </Router>
+            </Context.Provider>
+        </StrictMode>
+    );
+}
+
+// ! Do Not Edit This Line otherwise You Break this App
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(<AppCovers />);
+
+export default Context;
