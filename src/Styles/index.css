@@ -10,9 +10,9 @@
 
 body {
     position: relative;
-    /* background: #03001C; */
+    background: #03001C;
     color: white;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
