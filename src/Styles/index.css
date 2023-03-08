@@ -9,7 +9,11 @@
 }
 
 body {
-    background: #03001C;
+    position: relative;
+    /* background: #03001C; */
+    color: white;
+    /* overflow-x: hidden; */
+    overflow-y: auto;
 }
 
 .circle {

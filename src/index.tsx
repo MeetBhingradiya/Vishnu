@@ -29,6 +29,6 @@ function AppCovers() {
 }
 
 // ! Do Not Edit This Line otherwise You Break this App
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(<AppCovers />);
+ReactDOM.createRoot(document.getElementById('UI/UX-Portfolio') as HTMLElement).render(<AppCovers />);
 
 export default Context;
